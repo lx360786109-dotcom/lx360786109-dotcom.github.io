@@ -3,15 +3,118 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>梁旭个人网站</title>
+  <title>梁旭的个人网站</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    /* 主要页面背景和基本布局 */
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      overflow-x: hidden;
+      background-color: #f0f4f8;
+    }
+
+    header {
+      position: relative;
+      height: 100vh;
+      background: url('你的背景图.jpg') no-repeat center center/cover;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 0 20px;
+    }
+
+    header h1 {
+      font-size: 3.5rem;
+      margin-bottom: 10px;
+      font-weight: 700;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+      opacity: 0.8;
+    }
+
+    .btn {
+      padding: 10px 30px;
+      background-color: #007bff;
+      color: white;
+      text-decoration: none;
+      font-size: 1rem;
+      border-radius: 5px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #0056b3;
+      transform: translateY(-5px);
+    }
+
+    /* 项目部分样式 */
+    #projects {
+      background-color: white;
+      padding: 50px 0;
+    }
+
+    #projects h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+      color: #333;
+    }
+
+    #projects ul {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      list-style-type: none;
+      padding: 0;
+    }
+
+    #projects ul li {
+      margin: 15px;
+      text-align: center;
+    }
+
+    #projects ul li a {
+      display: block;
+      width: 250px;
+      padding: 20px;
+      background-color: #fff;
+      text-decoration: none;
+      color: #333;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    #projects ul li a:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
 </head>
 <body>
+
   <header>
-    <div class="container">
-      <img src="头像.jpg" alt="我的头像" class="profile-pic">
-      <h1>你好，我是梁旭！</h1>
-      <p>我是一名热爱技术的理工科学生，专注于人工智能、编程和技术分享。</p>
+    <div>
+      <h1>欢迎来到梁旭的个人网站！</h1>
+      <p>我是一名热爱编程和技术的理工科学生，专注于人工智能、机器学习、编程和科技分享。</p>
       <a href="about.html" class="btn">了解更多</a>
     </div>
   </header>
@@ -20,9 +123,9 @@
     <div class="container">
       <h2>我的项目</h2>
       <ul>
-        <li><a href="project1.html">项目1：智能家居系统</a></li>
-        <li><a href="project2.html">项目2：自动化机器人</a></li>
-        <li><a href="project3.html">项目3：数据分析平台</a></li>
+        <li><a href="project1.html">智能家居系统</a></li>
+        <li><a href="project2.html">自动化机器人</a></li>
+        <li><a href="project3.html">数据分析平台</a></li>
       </ul>
     </div>
   </section>
@@ -30,5 +133,6 @@
   <footer>
     <p>© 2025 梁旭。所有权利保留。</p>
   </footer>
+
 </body>
 </html>
